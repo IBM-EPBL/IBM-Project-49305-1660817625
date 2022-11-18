@@ -1,0 +1,88 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="first reg.css">
+    <link rel="stylesheet" href="https://cdn.tutorialjinni.com/intl-tel-input/17.0.8/css/intlTelInput.css"/>
+    <script src="https://cdn.tutorialjinni.com/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+ 
+</head>
+<body>
+    <div class="container">
+        <form id="contact" action="" method="post">
+            <h1>Registration Form</h1>
+            <h3>Fill the form below and press the submit button!</h3>
+            <div class="row">
+                <!-- first column -->
+                <div class="column">                        
+                    <fieldset>
+                        <input type="text" placeholder="Full Name *" name="name" required autofocus>
+                    </fieldset>
+                    <fieldset>
+                        <input type="text" placeholder="Father name *" name="fname" required autofocus>
+                    </fieldset>
+                    <fieldset>
+                        <input type="email" placeholder="Your email *" name="email" required autofocus>
+                    </fieldset>
+                    <fieldset>
+                        <input type="text" placeholder="Date of birth *" name="date" onfocus="(this.type = 'date')" required autofocus>
+                    </fieldset>
+                    <!-- adding all country code list -->
+                    <fieldset>
+                        <input type="text" placeholder="Phone number *" name="phone" id="phone" required autofocus>
+                    </fieldset>
+                </div>
+                <!-- second column -->
+                <div class="column">
+                    <fieldset>
+                        <p>What is your gender?</p>
+                        <div class="radio">
+                            <input type="radio" id="male" name="gender" required>
+                            <label for="male">Male</label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" id="female" name="gender" required>
+                            <label for="female">Female</label>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                       <div class="idCard">
+                           <label for="idCard">How did you hear about us??</label><br>
+                       </div> <div class="idCard">
+  <select name=" types" id="cars">
+    <option value="blank"> Please select</option>
+    <option value="">Newspaper</option>
+    <option value="">Internet</option>
+    <option value="">Magazine</option>
+  </select>
+                       </div>
+                    </fieldset>
+                   
+                </div>
+            </div>
+            <!-- submit button -->
+            <fieldset>
+
+<a href ="file:///C:/ibm%20project/implementing%20web%20application/log.html">
+<input type="button" value="Submit Now" id="button" class =" hello"></a>
+
+            </fieldset>
+        </form>
+    </div>
+ 
+ 
+    <!-- Javascript to initialize the code list -->
+    <script>
+    var input = document.querySelector("#phone");
+    window.intlTelInput(input, {
+     separateDialCode: true
+     });
+  </script>
+</body>
+</html>
